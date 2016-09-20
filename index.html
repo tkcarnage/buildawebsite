@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Learning How to Build a Website">
+    <meta name="author" content="Teaseung Kim">
+
+    <title>Lets's Build a Website</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+
+    <!-- Animate.css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="navigation">
+        <div id="step" class="animated fadeInLeft"></div>
+        <span class="animated glyphicon glyphicon-chevron-right"></span>
+    </div>
+
+    <div class="splash">
+        <div class="title">
+            Building a Website
+        </div>
+        <div class="name">
+            By: Teaseung Kim
+        </div>
+    </div>
+
+    <div id="content">
+        <div id="splash">
+            <div id="splashtitle" class="animated bounceInDown">
+                LET'S BUILD A <div class="animated infinite pulse">WEBSITE</div> TOGETHER!
+            </div>
+            <span class="glyphicon glyphicon-chevron-right animated bounceInUp"></span>
+        </div>
+
+        <div id="stepone">
+            <div class="center">
+                <div>
+                    <h1>Steps to build a website</h1>
+                    <ol id="listadd">
+                        <li>Add Content</li>
+                    </ol>
+                </div>
+            </div>
+            <h1>Add Content</h1>
+            <p>
+                First write out the <span class="highlight">&lt;html&gt;&lt;/html&gt;</span> tag. 
+                Between the <span class="highlight">&lt;html&gt;&lt;/html&gt;</span> tag add the <span class="highlight">&lt;head&gt;&lt;/head&gt;</span> tag. 
+                In the head tag you can add <span class="highlight">&lt;meta&gt;&lt;/meta&gt;</span> tags giving information about the website such as the author and description, <span class="highlight">&lt;title&gt;&lt;/title&gt;</span> tag to give your website a title which the users can see on the browser tab, and <span class="highlight">&lt;link&gt;&lt;/link&gt;</span> tags to link css stylesheets and CDNs.
+                To add content to the website you need to create a <span class="highlight">&lt;body&gt;&lt;/body&gt;</span> tag between the <span class="highlight">&lt;html&gt;&lt;/html&gt;</span> tag. 
+                Here you can add other tags such as <span class="highlight">&lt;p&gt;&lt;/p&gt;</span> to add text such as this.
+            </p>
+
+            <h3>Use different tags to represent different content.</h3>
+            <p> 
+                You can use different tags to represent the different content you are adding to the body.
+                <span class="highlight">&lt;h1&gt;&lt;/h1&gt;</span> can give text an important look for titles or articles, &lt;code&gt;&lt;/code&gt; tags are used to include code snippets as content, and <span class="highlight">&lt;a&gt;&lt;/a&gt;</span> tags are used for hyperlinks, and etc. There are many, many more tags which you can check out at <a target="_blank" href="http://www.html-5-tutorial.com/all-html-tags.htm">www.html-5-tutorial.com/all-html-tags.htm</a>.
+            </p>
+
+            <h3>Code snippets of this website.</h3>
+            <p><i>index.html</i></p>
+            <pre>
+<code>
+<span class="highlight">&lt;html&gt;</span>
+    <span class="highlight">&lt;head&gt;</span>
+        &lt;meta name&#61;&#34;description&#34; content&#61;&#34;Learning How to Build a Website&#34;&gt;
+        &lt;meta name&#61;&#34;author&#34; content&#61;&#34;Teaseung Kim&#34;&gt;
+        &lt;title&gt;Lets's Build a Website&lt;/title&gt;
+        &lt;link href&#61;&#34;css/custom.css&#34; rel&#61;&#34;stylesheet&#34;&gt;
+    <span class="highlight">&lt;/head&gt;</span>
+
+   <span class="highlight">&lt;body&gt;</span>
+        <span class="highlight">&lt;h1&gt;</span>Add Content<span class="highlight">&lt;/h1&gt;</span>
+        <span class="highlight">&lt;p&gt;</span>
+            First write out the...
+        <span class="highlight">&lt;/p&gt;</span>
+
+        <span class="highlight">&lt;h3&gt;</span>Use different...<span class="highlight">&lt;/h3&gt;</span>
+        <span class="highlight">&lt;p&gt;</span>
+            You can use...
+        <span class="highlight">&lt;/p&gt;</span>
+
+        <span class="highlight">&lt;h3&gt;</span>Code snippets...<span class="highlight">&lt;/h3&gt;</span>
+        <span class="highlight">&lt;pre&gt;</span>
+            <span class="highlight">&lt;code&gt;</span>
+                I'll skip this part to avoid recursion :)
+            <span class="highlight">&lt;/code&gt;</span>
+        <span class="highlight">&lt;pre&gt;</span>
+    <span class="highlight">&lt;/body&gt;</span>
+<span class="highlight">&lt;/html&gt;</span>
+</code>
+            </pre>
+        </div>
+
+        <div id="steptwo">
+            <h1>Add Spacing and Use Whitespace</h1>
+            <p>
+                Spacing and whitespace is one of the most fundamental building blocks to designing a good website. The
+                spacing on a website makes it easier for the users to scan the contents of your website and increases the readability of the content's text. By using the whitespace of a website you can control the users attention to certain elements and create a balance throughout your website.
+            </p>
+
+            <h3>Use containers, margins, padding and borders.</h3>
+            <p>
+                One of the main ways to create whitespace and tell the users where the main content resides is through the use of containers. Using containers with css such as flexbox you can control how the main content will be placed and gives a much cleaner look. The three main ways to create spacing on html elements are margins paddings and borders. Margins are used in websites to create space between html elements. This is to avoid clutter and improve visibility. Padding is used to create space between the container element and the content inside. Borders can be used to provide visible confirmation to the users on how big and where the html element is. For borders, padding is used to create the distance between the content and box borders in css. 
+            </p>
+
+            <h3>Here are some examples of creating whitespace.</h3>
+            <p><i>custom.css</i></p>
+            <pre>
+<code>
+    <span class="highlight">#content</span> {
+        padding-left: 10%;
+        padding-right: 10%;
+        margin: 80px auto;
+        width: 980px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+
+    <span class="highlight">p</span> {
+        margin-top: 18px;
+        margin-bottom: "30px;
+    }
+
+    <span class="highlight">h1</span> {
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+        padding-bottom: 10px;
+        border-bottom: 7px solid;
+    }
+
+    <span class="highlight">h3</span> {
+        margin-top: 25px;
+        border-left: 2px solid;
+        padding-left: 3px;
+    }
+
+    <span class="highlight">pre</span> { 
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-left: 30px;
+        border-left: 5px solid; 
+    }
+</code>
+            </pre>
+        </div>
+
+        <div id="stepthree">
+            <h1>Choose a Typeface</h1>
+            <p>
+                Choosing the right typeface is an important task. It is one of the main ways a website can give a unique impression on the users. There are so many different types of typeface that choosing the right one can be overwhelming. However one of the main way of choosing one, is a typeface that increases the ledgibility of the text for the users. Choosing the fontsize through css is another important way to increase the readibility for the users of the website. Using bigger fonts help readers able to acutally see the content while scanning and highlight important text, such titles and such of a website. 
+            </p>
+            <h3>How many fonts should I use?</h3>
+            <p>
+                I would say choosing more than three is usually going overboard. You don't want to overwhelm the users with different kinds of fonts all over the place. Fonts have a purpose and usually using more than three ruins the website's cohesive feel. I recommend only using more than three fonts if each font has a specific purpose on the website.
+            </p>
+            <h3>Where can I get some fonts?</h3>
+            <p>
+                Some of the best fonts are available free. The one we choose for this website was found through <a target="_blank" href="https://fonts.google.com/">Google Fonts</a>. This typeface is called Roboto which is the default font that Google uses across their apps. It is easy to read and very legible. 
+            </p>
+            <h3>Adding the font and changing the font-size.</h3>
+            <p><i>custom.css</i></p>
+            <pre>
+<code>
+    <span class="highlight">body</span> {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    <span class="highlight">p</span> {
+        font-size: 20px;
+    }
+
+    <span class="highlight">h3</span> {
+        font-size: 30px;
+    }
+</code>
+            </pre>
+            <p><i>index.html</i></p>
+            <pre>
+<code>
+&lt;head&gt;
+    &lt;meta name&#61;&#34;description&#34; content&#61;&#34;Learning How to Build a Website&#34;&gt;
+    &lt;meta name&#61;&#34;author&#34; content&#61;&#34;Teaseung Kim&#34;&gt;
+    &lt;title&gt;Lets's Build a Website&lt;/title&gt;
+    &lt;link href&#61;&#34;css/custom.css&#34; rel&#61;&#34;stylesheet&#34;&gt;
+    <span class="highlight">&lt;link href&#61;&#34;https://fonts.googleapis.com/css?family=Roboto&#34; rel&#61;&#34;stylesheet&#34;&gt;</span>
+&lt;/head&gt;
+</code>
+            </pre>
+        </div>
+
+        <div id="stepfour">
+            <h1>Choose and Add Color Palette</h1>
+            <p> 
+                Choosing and adding a color palette is another fundamental way to design a good website. By choosing the right color palette you can create a harmonious theme for your website to follow. Colors can be used to accent important content in your website and make the website stand out for the users.
+            </p>
+            <h3>Where can I get color palettes?</h3>
+            <p>
+                Making your own color palette can be tricky. That's why I recommend you to go to websites such as <a target="_blank" href="http://www.colourlovers.com/">Colour Lovers</a> to get inspiration or choose a free color palette that other users have created. In our case we chose the color palette <a target="_blank" href="http://www.colourlovers.com/palette/4312430/Full_Color_Joy?widths=0">Full Color Joy</a>.
+            </p>
+            <div class="center">
+                <div class="color1">Hex #FBEF15</div>
+                <div class="color2">Hex #05F856</div>
+                <div class="color3">Hex #03C9FB</div>
+                <div class="color4">Hex #A44BFD</div>
+                <div class="color5">Hex #F864F3</div>
+            </div>
+
+            <p><i>custom.css</i></p>
+            <pre>
+<code>
+    <span class="highlight">h1</span> { 
+        border-bottom-color: #FBEF15;
+        color: #F864F3;
+    }
+
+    <span class="highlight">h3</span> { 
+        border-left-color: #FBEF15;
+        color: #F864F3;
+    }
+
+    <span class="highlight">pre</span> { 
+        border-left-color: #05F856;
+    }
+
+    <span class="highlight">.highlight</span> { 
+        color: #A44BFD;
+    }
+
+    <span class="highlight">#content</span> { 
+        background-color: white;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+
+    <span class="highlight">body</span> { 
+        background-color: #fafafa;
+    }
+</code>
+            </pre>
+
+        </div>
+
+        <div id="stepfive">
+            <h1>Add a Splash Page</h1>
+            <p>
+                Since most of the content is finished, the website now needs something eye catching to attract users to the website. One way of doing this is creating a splash page. A splash page is something that the users will immediately see once they enter the website. It should be interesting and give enough information for the users to understand what the website is for.
+            </p>
+            <h3>Simple Splash Page</h3>
+            <p>
+                In our website's splash page a simple background picture with a title will suffice. There are many websites to get high quality free to use images, in our website we will choose a picture from <a target="_blank" href="https://unsplash.com/">Unsplash.com</a>.
+            </p>
+
+            <p><i>index.html</i></p>
+        <pre>
+<code>
+    <span class="highlight">&lt;div class=&quot;splash&quot;&gt;</span>
+        <span class="highlight">&lt;div class=&quot;title&quot;&gt;</span>
+            Building a Website
+        <span class="highlight">&lt;/div&gt;</span>
+        <span class="highlight">&lt;div class=&quot;name&quot;&gt;</span>
+            By: Teaseung Kim
+        <span class="highlight">&lt;/div&gt;</span>
+    <span class="highlight">&lt;/div&gt;</span>
+</code>
+            </pre>
+
+            <p><i>custom.css</i></p>
+        <pre>
+<code>
+<span class="highlight">.splash</span> {
+    display: none;
+    height: 800px;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../unsplashimage.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+<span class="highlight">.title</span> {
+    font-family: 'Bungee', cursive;
+    border-bottom: 20px solid #05F856;
+    font-size: 100px;
+    color: #FBEF15;
+    text-shadow: 2px 2px 4px black;
+    text-align: center;
+}
+
+<span class="highlight">.name</span> {
+    font-family: 'Bungee', cursive;
+    border-bottom: 20px solid #05F856;
+    padding-top: 80px;
+    font-size: 20px;
+    color: #FBEF15;
+    text-shadow: 2px 2px 4px black;
+    text-align: center;
+}
+</code>
+            </pre>
+        </div>
+
+        <div id="stepsix">
+            <h1>Add Javascript</h1>
+            <p>
+                By adding Javascript to the website we can add interactive elements instead of just a static website. We can add things such as animation, alerts, parallax and etc. Also there a bunch of Javascript libraries out there you can use to get the most out of the website you create. Check out <a target="_blank" href="https://www.javascripting.com/">www.javascripting.com</a> for more.
+            </p>
+            <h3>Some Examples On This Website</h3>
+            <p>
+                We made the list we added in the beginning of the tutorial into a link which animates the browser window to scroll to the correct part of the website. Also here are some cool buttons which are animated to move when clicked check them out!
+            </p>
+            <div class="buttoncontainer">
+                <button id="buttonone" type="button" class="btn btn-default">Click on me!</button>
+                <button id="buttontwo" type="button" class="btn btn-primary">Click on me!</button>
+                <button id="buttonthree" type="button" class="btn btn-success">Click on me!</button>
+            </div>
+            <p><i>index.html</i></p>
+        <pre>
+<code>
+<span class="highlight">&lt;button id="buttonone" type="button" class="btn btn-default"&gt;</span>Click on me!<span class="highlight">&lt;/button&gt;</span>
+<span class="highlight">&lt;button id="buttontwo" type="button" class="btn btn-primary"&gt;</span>Click on me!<span class="highlight">&lt;/button&gt;</span>
+<span class="highlight">&lt;button id="buttonthree" type="button" class="btn btn-success"&gt;</span>Click on me!<span class="highlight">&lt;/button&gt;</span>
+</code>
+        </pre>
+            <p><i>custom.js</i></p>
+        <pre>
+<code>
+<span class="highlight">$(#buttonone)</span>.click(function(){
+    <span class="highlight">$(#buttonone)</span>.addClass("animated flip");
+});
+<span class="highlight">$(#buttontwo)</span>.click(function(){
+    <span class="highlight">$(#buttontwo)</span>.addClass("animated hinge");
+});
+<span class="highlight">$(#buttonthree)</span>.click(function(){
+    <span class="highlight">$(#buttonthree)</span>.addClass("animated rollIn");
+});
+</code>
+        </pre>
+        </div>
+
+        <div id="stepseven">
+            <h1>Add Footer</h1>
+            <p>
+                Finally the last step is to make the footer. Here you can place information about yourself or other links that pertain to the website. Usually in footer you can link your social media websites and ways for the users to contact you. In our website I included some simple glphyicons for my social medias. 
+            </p>
+            <h3>In Conclusion</h3>
+            <p>
+                This was just a brief outline of what steps you have to take to design and build a website. It is not meant for beginners but rather for people who know a bit about CSS and HTML. Using these steps you can build a website that looks professional and users to look at. Thanks for reading!
+            </p>
+
+            <p><i>index.html</i></p>
+        <pre>
+<code>
+<span class="highlight">&lt;footer&gt;</span>
+    <span class="highlight">&lt;div class="iconcontainer"&gt;</span>
+        <span class="highlight">&lt;i class="fa fa-linkedin-square fa-5x" aria-hidden="true"&gt;&lt;/i&gt;</span>
+        <span class="highlight">&lt;i class="fa fa-github-square fa-5x" aria-hidden="true"&gt;&lt;/i&gt;</span>
+        <span class="highlight">&lt;i class="fa fa-twitter-square fa-5x" aria-hidden="true"&gt;&lt;/i&gt;</span>
+    <span class="highlight">&lt;/div&gt;</span>
+    <span class="highlight">&lt;div&gt;</span> You could put other information here too like company information and other links that are not in the navbar<span class="highlight">&lt;/div&gt;</span>
+<span class="highlight">&lt;/footer&gt;</span>
+</code>
+        </pre>
+
+            <footer>
+                <div class="iconcontainer">
+                    <a target="_blank" href="https://www.linkedin.com/in/teaseungkim"><i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i></a>
+                    <a target="_blank" href="https://github.com/tkcarnage"><i class="fa fa-github-square fa-5x" aria-hidden="true"></i></a>
+                    <a target="_blank" href="https://twitter.com/tkcarnage"><i class="fa fa-twitter-square fa-5x" aria-hidden="true"></i></a>
+                </div>
+                <div class="conclusion"> You could put other information here too like company information and other links that are not in the navbar</div>
+            </footer>
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Javascript -->
+    <script src="js/steps.js"></script>
+
+</body>
+
+</html>
