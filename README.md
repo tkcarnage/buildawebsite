@@ -20,3 +20,6 @@ A website that adds details and information step by step to show the process of 
 * jQuery used to add CSS to HTML classes each step of the building website process
 * JavaScript used to create the steps
 
+## Directions to run this program:
+1. git clone https://github.com/tkcarnage/buildawebsite.git
+1. Click on index.html inside directory and you are done!
